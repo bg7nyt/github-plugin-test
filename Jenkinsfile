@@ -3,17 +3,17 @@ pipeline {
     //    label "java-8"
     //}
     stages  {
-        stage('Preparation') {
-            steps {
+       // stage('Preparation') {
+            //steps {
               //git 'https://github.com/bg7nyt/java.git'
-            }
-        }
-        stage('Build') {
+            //}
+        //}
+        //stage('Build') {
             //steps {
             //sh "mvn -Dmaven.test.failure.ignore clean package"
             //archive 'target/*.jar'
             //}
-        }
+        //}
         
         stage("Label"){
             steps {
@@ -21,13 +21,13 @@ pipeline {
             }
         }
         
-        stage('Results') {
+        //stage('Results') {
             //steps {
             //sh 'mvn test'
             //junit '**/target/surefire-reports/*.xml'
             //}
       
-        }
+        //}
     }
 }
 
